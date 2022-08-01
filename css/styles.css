@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1c2533;
+}
+
+/*------------Navbar------------*/
+.logo{
+    margin-top: 44px;
+    margin-left: 124px;
+}
+.header{
+    display: flex;
+}
+
+.navbar{
+    width: 591px;
+    height: 51px;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(89.91deg, rgba(78, 205, 196, 0.82) 0.08%, #4ECDC4 40.87%, #FD6B6B 81.84%, rgba(253, 107, 107, 0.11) 99.94%);
+    border-radius: 25px 0px 0px 25px;
+    margin-top: 35px;
+}
+
+.navbar ul{
+    display: flex;
+    margin-left: 60px;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-right: 50px;
+    list-style: none;
+}
+
+.navbar ul li a{
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li a::after {
+	content: "";
+	position: absolute;
+    display: inline-block;
+    width: 0%;
+	height: 2.5px;
+	background: white;
+	display: inline-block;
+	top: 21px;
+    left: 0px;
+	transition: .3s ease all;
+}
+
+.navbar ul li a:hover::after{
+	width: 100%;
+}
