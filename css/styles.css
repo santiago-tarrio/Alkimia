@@ -1,69 +1,110 @@
+/* Resets y estilos generales */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
-body{
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+body {
     background: #1c2533;
+    color: #fff;
 }
 
-/*------------Navbar------------*/
-.logo{
-    margin-top: 44px;
-    margin-left: 124px;
-}
-.header{
-    display: flex;
+main {
+    /* background-image: url("../assets/Vector\ de\ fondo.png"); */
+    max-width: 1420px;
+    margin: 0 auto;
 }
 
-.navbar{
-    width: 591px;
+/* Navbar */
+
+.logo {
+    width: 400px;
+}
+
+.navbar__child {
+    height: 20vh;
+}
+
+.div__ul {
+    flex-grow: 0;
+}
+
+.ul__container {
+    width: 390px;
     height: 51px;
-    position: absolute;
-    right: 0;
     background: linear-gradient(89.91deg, rgba(78, 205, 196, 0.82) 0.08%, #4ECDC4 40.87%, #FD6B6B 81.84%, rgba(253, 107, 107, 0.11) 99.94%);
     border-radius: 25px 0px 0px 25px;
-    margin-top: 35px;
 }
 
-.navbar ul{
-    display: flex;
-    margin-left: 60px;
-    height: 100%;
-    align-items: center;
+nav ul li {
+    margin: 0 1em;
 }
 
-.navbar ul li {
-    margin-right: 50px;
-    list-style: none;
-}
-
-.navbar ul li a{
+ul li a {
     color: white;
     font-family: 'Roboto';
-    font-style: normal;
+    position: relative;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
 }
 
-.navbar ul li a::after {
-	content: "";
-	position: absolute;
+ul li a::after {
+    content: "";
+    position: absolute;
     display: inline-block;
-    width: 0%;
-	height: 2.5px;
-	background: white;
-	display: inline-block;
-	top: 21px;
+    width: 100%;
+    height: 2.5px;
+    background: white;
+    display: inline-block;
+    top: 100%;
+    transform: scaleX(0);
     left: 0px;
-	transition: .3s ease all;
+    transition: .3s ease all;
 }
 
-.navbar ul li a:hover::after{
-	width: 100%;
+ul li a:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+/* Presentation */
+
+.presentation {
+    min-height: 100vh;
+}
+
+a.btn-alkimia {
+    width: 190px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-weight: semi-bold;
+    padding: 10px 50px;
+    background: linear-gradient(180deg, #ED6A6D 0%, #5EBFBC 100%);
+    border-radius: 57px;
+    background-size: 100% 300%;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    transition-duration: .5s;
+}
+
+a.btn-alkimia:hover {
+    background-position: 0 100%;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
