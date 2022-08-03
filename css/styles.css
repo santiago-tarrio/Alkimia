@@ -35,6 +35,7 @@ main {
 
 .navbar__child {
     height: 20vh;
+    padding-right: 0;
 }
 
 .div__ul {
@@ -42,14 +43,16 @@ main {
 }
 
 .ul__container {
-    width: 390px;
+    width: 520px;
     height: 51px;
-    background: linear-gradient(89.91deg, rgba(78, 205, 196, 0.82) 0.08%, #4ECDC4 40.87%, #FD6B6B 81.84%, rgba(253, 107, 107, 0.11) 99.94%);
+    background: linear-gradient(89.91deg, rgba(78, 205, 196, 0.82) 0.08%, #4ECDC4 40.87%, #FD6B6B 82.84%, rgba(253, 107, 107, 0.11) 99.94%);
     border-radius: 25px 0px 0px 25px;
+    right: 0;
+    justify-content: flex-start!important;
 }
 
 nav ul li {
-    margin: 0 1em;
+    margin: 0 2em;
 }
 
 ul li a {
@@ -86,12 +89,39 @@ ul li a:hover::after {
     min-height: 100vh;
 }
 
+.presentacion__texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentacion__texts h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+}
+
+.presentacion__texts p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    margin-top: 3.75rem;
+    text-align: center;
+}
+
 a.btn-alkimia {
-    width: 190px;
+    width: 200px;
     text-align: center;
     display: block;
     color: #fff;
-    font-weight: semi-bold;
+    font-family: 'Rubik';
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 5.5rem;
     padding: 10px 50px;
     background: linear-gradient(180deg, #ED6A6D 0%, #5EBFBC 100%);
     border-radius: 57px;
@@ -107,4 +137,17 @@ a.btn-alkimia:hover {
     -o-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+}
+
+.presentacion__gradient {
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    border-radius: 50%;
+    left: 45%;
+    top: 30%;
+    background: linear-gradient(9deg, rgba(28,37,51,1) 0%, rgba(78,205,196,1) 48%, rgba(28,37,51,1) 100%);
+    filter: blur(90px);
+    transform: rotate(49deg);
+    z-index: -1;
 }
