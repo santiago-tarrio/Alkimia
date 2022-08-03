@@ -216,3 +216,85 @@ a.btn-alkimia:hover {
 }
 
 /* Nosotros */
+.nosotros__h2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.nosotros__h2::before{
+    content: 'Nosotros';
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    filter: blur(6px);
+    position: absolute;
+    top: -35px;
+    color:#4ECDC4;
+    z-index: -1;
+}
+.nosotros__card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.nosotros__card{
+    width: 400px;
+    height: 526px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: relative;   
+}
+
+.nosotros__card::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #4ECDC4 31.96%, #FD6B6B 88.21%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    top: -10px;
+    right: -10px;
+    z-index: -1;
+}
+
+.nosotros__card-data{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+
+.nosotros__card-data img{
+    margin-top: -20px;
+    margin-left: -5px;
+}
+
+.nosotros__card-data p{
+    position: absolute;
+    font-style: normal;
+    width: 70%;
+    margin-left: 34px;
+}
+.nosotros__name{
+    top: 65%;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 115%;
+}
+
+.nosotros__professions{
+    top: 75%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Rubik';
+}
