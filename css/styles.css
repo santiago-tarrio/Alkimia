@@ -42,12 +42,12 @@ main {
 }
 
 .ul__container {
-    width: 520px;
+    width: 370px;
     height: 51px;
-    background: linear-gradient(89.91deg, rgba(78, 205, 196, 0.82) 0.08%, #4ECDC4 40.87%, #FD6B6B 82.84%, rgba(253, 107, 107, 0.11) 99.94%);
+    right: 0;  
+    background: linear-gradient(89.91deg, rgba(78, 205, 196, 0.82) 0.08%, #4ECDC4 40.87%, #FD6B6B 81.84%, rgba(253, 107, 107, 0.11) 99.94%);
     border-radius: 25px 0px 0px 25px;
-    right: 0;
-    justify-content: flex-start !important;
+    display: flex !important;
 }
 
 nav ul li {
@@ -61,6 +61,7 @@ ul li a {
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
+    margin-left: -25px;
 }
 
 ul li a::after {
@@ -92,6 +93,7 @@ ul li a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 110px;
 }
 
 .presentacion__texts h1 {
@@ -100,15 +102,17 @@ ul li a:hover::after {
     font-weight: 700;
     font-size: 64px;
     line-height: 95px;
+    width: 695px;
+    text-align: center;
 }
 
 .presentacion__texts p {
     font-family: 'Rubik';
     font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 38px;
-    margin-top: 3.75rem;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -116,6 +120,7 @@ ul li a:hover::after {
     width: 200px;
     text-align: center;
     display: block;
+    margin-top: 60px;
     color: #fff;
     font-family: 'Rubik';
     font-size: 22px;
@@ -327,6 +332,74 @@ a.btn-alkimia:hover {
     font-size: 14px;
     line-height: 17px;
     font-family: 'Rubik';
+}
+
+/* Nuestros trabajos */
+
+.nuestros-trabajos{
+    margin-bottom: 130px;
+}
+
+.nuestros-trabajos h2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.carrousel-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+
+.carrousel-card{
+    width: 405px;
+    height: 508px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.carrousel-text{
+    width: 405px;
+    height: 71px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.75);
+    opacity: 0.8;
+    backdrop-filter: blur(25px);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.carrousel-text p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 140%;
+    color: #1F2937;
+    margin-top: 18px;
+    margin-left: 19px;
+    width: 70%;
+}
+
+.carrousel-detail{
+    position: absolute;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    bottom: -120px;
+    left: 15px;
+    height: 85px;
+    text-align: center;
+    max-width: 325px;
 }
 
 /* Contacto */
