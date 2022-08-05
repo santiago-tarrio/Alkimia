@@ -49,7 +49,8 @@ p {
 }
 
 .navbar__child {
-    height: 15vh;
+    /* height: 15vh; */
+    height: 100px;
     padding-right: 0;
 }
 
@@ -594,4 +595,12 @@ footer img {
     color: white;
     font-size: 3rem;
     padding: 0.6rem;
+}
+
+.pruebaaaaaaa{
+    width: 37px;
+    position: fixed;
+    top: 33px;
+    left: 28px;
+    z-index: 100;
 }
