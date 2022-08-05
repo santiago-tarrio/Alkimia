@@ -26,6 +26,22 @@ main {
     margin: 0 auto;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+
 /* Navbar */
 
 .logo {
@@ -33,7 +49,7 @@ main {
 }
 
 .navbar__child {
-    height: 20vh;
+    height: 15vh;
     padding-right: 0;
 }
 
@@ -44,7 +60,7 @@ main {
 .ul__container {
     width: 370px;
     height: 51px;
-    right: 0;  
+    right: 0;
     background: linear-gradient(89.91deg, rgba(78, 205, 196, 0.82) 0.08%, #4ECDC4 40.87%, #FD6B6B 81.84%, rgba(253, 107, 107, 0.11) 99.94%);
     border-radius: 25px 0px 0px 25px;
     display: flex !important;
@@ -85,15 +101,12 @@ ul li a:hover::after {
 
 /* Presentation */
 
-.presentation {
-    min-height: 80vh;
-}
-
 .presentacion__texts {
     display: flex;
     flex-direction: column;
+    min-height: 85vh;
     align-items: center;
-    margin-top: 110px;
+    justify-content: space-evenly;
 }
 
 .presentacion__texts h1 {
@@ -112,7 +125,6 @@ ul li a:hover::after {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    margin-top: 100px;
     text-align: center;
 }
 
@@ -120,7 +132,6 @@ ul li a:hover::after {
     width: 200px;
     text-align: center;
     display: block;
-    margin-top: 60px;
     color: #fff;
     font-family: 'Rubik';
     font-size: 22px;
@@ -135,7 +146,7 @@ ul li a:hover::after {
     transition-duration: .5s;
 }
 
-a.btn-alkimia:hover {
+.btn-alkimia:hover {
     background-position: 0 100%;
     -o-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
@@ -181,7 +192,7 @@ a.btn-alkimia:hover {
 
 .services {
     max-width: 1400px;
-    margin: auto;
+    margin: 75px auto;
 }
 
 .card-left,
@@ -243,8 +254,8 @@ a.btn-alkimia:hover {
 
 /* Nosotros */
 
-.nosotros{
-    margin: 5em 0;
+.nosotros {
+    margin: 75px 0;
 }
 
 .nosotros__h2 {
@@ -265,7 +276,7 @@ a.btn-alkimia:hover {
     filter: blur(6px);
     position: absolute;
     top: -35px;
-    color: #4ECDC4;
+    color: #FD6B6B;
     z-index: -1;
 }
 
@@ -334,13 +345,111 @@ a.btn-alkimia:hover {
     font-family: 'Rubik';
 }
 
+/* Nuestra fórmula */
+
+.formula__h2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.formula__h2::before {
+    content: 'Nuestra fórmula';
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    filter: blur(6px);
+    position: absolute;
+    top: -35px;
+    color: #4ECDC4;
+    z-index: -1;
+}
+
+.accordion-section {
+    margin: 75px 0;
+}
+
+.accordion-section__child {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 500px;
+}
+
+.accordion {
+    width: 40%;
+}
+
+.accordion * {
+    background-color: transparent !important;
+    color: white;
+}
+
+.accordion-item {
+    margin: 20px 0;
+    border: 1px solid #fff !important;
+    border-radius: 5px;
+}
+
+.accordion-item img {
+    width: 30px;
+    margin-right: 1em;
+}
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:focus {
+    box-shadow: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    border-bottom: 1px solid #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%) invert(100%);
+}
+
 /* Nuestros trabajos */
 
-.nuestros-trabajos{
+.nuestros-trabajos {
     margin-bottom: 130px;
 }
 
-.nuestros-trabajos h2{
+.trabajos__h2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.trabajos__h2::before {
+    content: 'Nuestros trabajos';
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    filter: blur(6px);
+    position: absolute;
+    top: -35px;
+    color: #FD6B6B;
+    z-index: -1;
+}
+
+.nuestros-trabajos h2 {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
@@ -349,21 +458,22 @@ a.btn-alkimia:hover {
     margin-bottom: 100px;
 }
 
-.carrousel-container{
+.carrousel-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 120px;
 }
 
 
-.carrousel-card{
+.carrousel-card {
     width: 405px;
     height: 508px;
     border-radius: 20px;
     position: relative;
 }
 
-.carrousel-text{
+.carrousel-text {
     width: 405px;
     height: 71px;
     position: absolute;
@@ -374,7 +484,7 @@ a.btn-alkimia:hover {
     border-radius: 0px 0px 20px 20px;
 }
 
-.carrousel-text p{
+.carrousel-text p {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
@@ -386,7 +496,7 @@ a.btn-alkimia:hover {
     width: 70%;
 }
 
-.carrousel-detail{
+.carrousel-detail {
     position: absolute;
     font-family: 'Rubik';
     font-style: normal;
@@ -404,35 +514,84 @@ a.btn-alkimia:hover {
 
 /* Contacto */
 
-hr{
+hr {
     border: 1px solid white;
 }
 
-.contact form{
+.contact__titles {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact__titles img {
+    margin: 4em auto;
+}
+
+.contact img {
+    width: 200px;
+}
+
+.contact form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 600px;
-    height: 700px;
+    margin: 75px auto;
+    width: 700px;
+    height: 600px;
     padding: 20px;
-    border: 1px solid #fff;
     border-radius: 30px;
     background: #0B0818;
 }
 
-.contact form input, .contact form textarea {
-    background: #344456 ;
+.contact form input,
+.contact form textarea {
+    background: #344456;
     border: none;
 }
 
-.contact form input::placeholder, .contact form textarea::placeholder {
+.contact form input::placeholder,
+.contact form textarea::placeholder {
     color: #fff;
 }
 
-.form-group{
+input {
     margin: 1.4em 0;
 }
 
-form .btn-alkimia{
+form .btn-alkimia {
     margin: 0 auto;
+}
+
+button[type="submit"] {
+    border: none;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;
+}
+
+footer img {
+    width: 100px;
+}
+
+.icon-whatsapp {
+    width: 80px;
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+    color: white;
+    font-size: 3rem;
+    padding: 0.6rem;
 }
