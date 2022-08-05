@@ -289,11 +289,21 @@ ul li a:hover::after {
     z-index: -1;
 }
 
+.nosotros__p{
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 113.34%;
+text-align: justify;
+margin-top: 40px;
+}
+
 .nosotros__card-container {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
-    margin: 4em 0;
+    margin: 2em 0;
 }
 
 .nosotros__card {
