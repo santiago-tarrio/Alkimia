@@ -48,8 +48,15 @@ p {
     width: 400px;
 }
 
+.alkimia-logo {
+    width: 37px;
+    position: fixed;
+    top: 33px;
+    left: 28px;
+    z-index: 100;
+}
+
 .navbar__child {
-    /* height: 15vh; */
     height: 100px;
     padding-right: 0;
 }
@@ -115,7 +122,7 @@ ul li a:hover::after {
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
-    line-height: 75px;
+    line-height: 1;
     width: 695px;
     text-align: center;
 }
@@ -123,14 +130,13 @@ ul li a:hover::after {
 .presentacion__texts p {
     font-family: 'Rubik';
     font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 40px;
     text-align: center;
     margin-top: -60px;
 }
 
-.presentacion__texts a{
+.presentacion__texts a {
     margin-top: -30px;
 }
 
@@ -192,16 +198,22 @@ ul li a:hover::after {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 800;
-    font-size: 58px;
+    font-size: 85px;
     filter: blur(6px);
     position: absolute;
-    top: -35px;
+    top: -42px;
+    left: 280px;
     color: #4ECDC4;
     z-index: -1;
 }
 
 .services {
     margin: 75px auto;
+}
+
+.services h3 {
+    color: #FD6B6B;
+    margin: 14px 0;
 }
 
 .card-left,
@@ -213,15 +225,15 @@ ul li a:hover::after {
 .card-right .card__img {
     width: 380px;
     height: 260px;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .card-right {
     display: flex;
     height: 300px;
     margin-right: 20%;
-    border-radius: 0px 25px 25px 0px;
-    background: linear-gradient(269.37deg, rgba(255, 174, 174, 0.75) 0.47%, rgba(255, 255, 255, 0) 96.95%);
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 90.62%);
     filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
 }
 
@@ -230,8 +242,8 @@ ul li a:hover::after {
     flex-direction: row-reverse;
     height: 300px;
     margin-left: 20%;
-    border-radius: 25px 0px 0px 25px;
-    background: linear-gradient(-269.37deg, rgba(255, 174, 174, 0.75) 0.47%, rgba(255, 255, 255, 0) 96.95%);
+    border-radius: 10px;
+    background: linear-gradient(260deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 90.62%);
     filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.25));
 }
 
@@ -284,23 +296,24 @@ ul li a:hover::after {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 800;
-    font-size: 58px;
+    font-size: 85px;
     filter: blur(6px);
     position: absolute;
-    top: -35px;
+    top: -42px;
+    left: -85px;
     color: #FD6B6B;
     z-index: -1;
 }
 
-.nosotros__p{
-font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 113.34%;
-text-align: center;
-margin-top: 40px;
-width: 80%;
+.nosotros__p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 113.34%;
+    text-align: center;
+    margin-top: 40px;
+    width: 80%;
 }
 
 .nosotros__card-container {
@@ -345,6 +358,15 @@ width: 80%;
     margin-left: -35px;
 }
 
+.nosotros__card-data .card-data__img1 {
+    margin-left: -70px;
+}
+
+.nosotros__card-data .card-data__img3 {
+    margin-top: -3px;
+}
+
+
 .nosotros__card-data p {
     position: absolute;
     font-style: normal;
@@ -384,10 +406,11 @@ width: 80%;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 800;
-    font-size: 58px;
+    font-size: 85px;
     filter: blur(6px);
     position: absolute;
-    top: -35px;
+    top: -42px;
+    left: 300px;
     color: #4ECDC4;
     z-index: -1;
 }
@@ -464,10 +487,11 @@ width: 80%;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 800;
-    font-size: 58px;
+    font-size: 85px;
     filter: blur(6px);
     position: absolute;
-    top: -35px;
+    top: -42px;
+    left: 260px;
     color: #FD6B6B;
     z-index: -1;
 }
@@ -554,7 +578,7 @@ hr {
     margin: 0 auto;
 }
 
-.contact__titles h2{
+.contact__titles h2 {
     font-size: 32px;
 }
 
@@ -630,12 +654,4 @@ footer img {
     color: white;
     font-size: 3rem;
     padding: 0.6rem;
-}
-
-.pruebaaaaaaa{
-    width: 37px;
-    position: fixed;
-    top: 33px;
-    left: 28px;
-    z-index: 100;
 }
