@@ -17,7 +17,7 @@ a:hover {
 }
 
 body {
-    background: #1c2533;
+    background:#0B0818;
     color: #fff;
 }
 
@@ -40,6 +40,11 @@ h5,
 h6,
 p {
     margin-bottom: 0;
+}
+
+.gradient {
+    position: absolute;
+    z-index: -1;
 }
 
 /* Navbar */
@@ -170,15 +175,124 @@ ul li a:hover::after {
 
 .presentacion__gradient {
     position: absolute;
-    width: 600px;
-    height: 350px;
     border-radius: 50%;
-    left: 45%;
-    top: 30%;
-    background: linear-gradient(9deg, rgba(28, 37, 51, 1) 0%, rgba(78, 205, 196, 1) 48%, rgba(28, 37, 51, 1) 100%);
-    filter: blur(90px);
-    transform: rotate(49deg);
+    left: 10%;
+    top: 15%;
     z-index: -1;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.pre__gradient1{
+    width: 350px;
+    height: 240px;
+    background: linear-gradient(9deg, #0B0818 0%, rgba(78, 205, 196, 1) 48%, #0B0818 100%);
+    filter: blur(100px);
+    animation-name: gradient-blue;
+}
+
+.pre__gradient2{
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(89deg, #0B0818 0%, hsla(0, 97%, 71%, 1) 50%, #0B0818 100%);
+    filter: blur(78px);
+    animation-name: gradient-orange;
+}
+
+@keyframes gradient-orange {
+    0% {
+        transform: translate(20vw, 25vh);
+    }
+
+    10% {
+        transform: translate(15vw, 25vh);
+    }
+
+    20% {
+        transform: translate(10vw, 35vh);
+    }
+
+    30% {
+        transform: translate(5vw, 35vh);
+    }
+
+    40% {
+        transform: translate(5vw, 45vh);
+    }
+
+    50% {
+        transform: translate(0vw, 55vh);
+    }
+
+    60% {
+        transform: translate(5vw, 55vh);
+    }
+
+    70% {
+        transform: translate(5vw, 45vh);
+    }
+
+    80% {
+        transform: translate(10vw, 35vh);
+    }
+
+    90% {
+        transform: translate(15vw, 25vh);
+    }
+
+    100% {
+        transform: translate(20vw, 25vh);
+    }
+}
+
+@keyframes gradient-blue {
+    0% {
+        transform: translate(65vw, 25vh);
+    }
+
+    10% {
+        transform: translate(60vw, 20vh);
+    }
+
+    20% {
+        transform: translate(55vw, 15vh);
+    }
+
+    30% {
+        transform: translate(50vw, 10vh);
+    }
+
+    40% {
+        transform: translate(45vw, 10vh);
+    }
+
+    50% {
+        transform: translate(40vw, 5vh);
+    }
+
+    60% {
+        transform: translate(45vw, 10vh);
+    }
+
+    70% {
+        transform: translate(50vw, 15vh);
+    }
+
+    80% {
+        transform: translate(55vw, 20vh);
+    }
+
+    90% {
+        transform: translate(60vw, 20vh);
+    }
+
+    100% {
+        transform: translate(65vw, 25vh);
+    }
 }
 
 /* services */
@@ -205,6 +319,11 @@ ul li a:hover::after {
     left: 280px;
     color: #4ECDC4;
     z-index: -1;
+}
+
+.services__vector{
+    transform: rotate(175.87deg);
+    left: 200px;
 }
 
 .services {
@@ -504,6 +623,11 @@ ul li a:hover::after {
     font-size: 48px;
     text-align: center;
     margin-bottom: 100px;
+}
+
+.nuestrosTrabajos__vector{
+    transform: rotate(122.63deg);
+    margin-top: -230px;
 }
 
 .carrousel-container {
