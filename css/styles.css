@@ -210,26 +210,36 @@ ul li a:hover::after {
 
     10% {
         transform: translate(15vw, 25vh);
+        opacity: 0.7;
     }
 
     20% {
         transform: translate(10vw, 35vh);
+        opacity: 0.5;
+    }
+
+    25% {
+        opacity: 0.5;
     }
 
     30% {
         transform: translate(5vw, 35vh);
+        opacity: 0.5
     }
 
     40% {
         transform: translate(5vw, 45vh);
+        opacity: 0.7;
     }
 
     50% {
-        transform: translate(0vw, 55vh);
+        transform: translate(0vw, 50vh);
+        opacity: 0.7;
     }
 
     60% {
         transform: translate(5vw, 55vh);
+        opacity: 1;
     }
 
     70% {
@@ -256,22 +266,27 @@ ul li a:hover::after {
 
     10% {
         transform: translate(60vw, 20vh);
+        opacity: 0.7;
     }
 
     20% {
         transform: translate(55vw, 15vh);
+        opacity: 0.5;
     }
 
     30% {
         transform: translate(50vw, 10vh);
+        opacity: 0.5;
     }
 
     40% {
         transform: translate(45vw, 10vh);
+        opacity: 0.7;
     }
 
     50% {
         transform: translate(40vw, 5vh);
+        opacity: 1;
     }
 
     60% {
