@@ -45,6 +45,15 @@ p {
 .gradient {
     position: absolute;
     z-index: -1;
+    width: 100%;
+}
+
+.nosotros, .accordion-section, .nuestros-trabajos, .contact{
+    margin: 8em 0;
+}
+
+section > h2{
+    margin: 1em 0;
 }
 
 /* Navbar */
@@ -128,7 +137,6 @@ ul li a:hover::after {
     font-weight: 700;
     font-size: 64px;
     line-height: 1;
-    width: 695px;
     text-align: center;
 }
 
@@ -210,10 +218,16 @@ ul li a:hover::after {
 
     10% {
         transform: translate(15vw, 25vh);
+        opacity: 0.7;
     }
 
     20% {
         transform: translate(10vw, 35vh);
+        opacity: 0.5;
+    }
+
+    25% {
+        opacity: 0.5;
     }
 
     30% {
@@ -222,14 +236,17 @@ ul li a:hover::after {
 
     40% {
         transform: translate(5vw, 45vh);
+        opacity: 0.7;
     }
 
     50% {
-        transform: translate(0vw, 55vh);
+        transform: translate(0vw, 50vh);
+        opacity: 0.7;
     }
 
     60% {
         transform: translate(5vw, 55vh);
+        opacity: 1;
     }
 
     70% {
@@ -256,22 +273,27 @@ ul li a:hover::after {
 
     10% {
         transform: translate(60vw, 20vh);
+        opacity: 0.7;
     }
 
     20% {
         transform: translate(55vw, 15vh);
+        opacity: 0.5;
     }
 
     30% {
         transform: translate(50vw, 10vh);
+        opacity: 0.5;
     }
 
     40% {
         transform: translate(45vw, 10vh);
+        opacity: 0.7;
     }
 
     50% {
         transform: translate(40vw, 5vh);
+        opacity: 1;
     }
 
     60% {
@@ -298,16 +320,16 @@ ul li a:hover::after {
 /* services */
 
 .services__h2 {
+    margin-top: 1em;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     text-align: center;
     position: relative;
-    margin-bottom: 90px;
 }
 
-.services__h2::before {
+/* .services__h2::before {
     content: 'Nuestros servicios';
     font-family: 'Rubik';
     font-style: normal;
@@ -319,15 +341,11 @@ ul li a:hover::after {
     left: 280px;
     color: #4ECDC4;
     z-index: -1;
-}
+} */
 
 .services__vector{
     transform: rotate(175.87deg);
     left: 200px;
-}
-
-.services {
-    margin: 75px auto;
 }
 
 .services h3 {
@@ -378,6 +396,7 @@ ul li a:hover::after {
 .card-left__child {
     width: 95%;
     display: flex;
+    flex-direction: row-reverse;
     margin-right: 11%;
     justify-content: space-between;
     align-items: center;
@@ -396,7 +415,6 @@ ul li a:hover::after {
 /* Nosotros */
 
 .nosotros {
-    margin: 135px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -411,7 +429,7 @@ ul li a:hover::after {
     position: relative;
 }
 
-.nosotros__h2::before {
+/* .nosotros__h2::before {
     content: 'Nosotros';
     font-family: 'Rubik';
     font-style: normal;
@@ -423,16 +441,16 @@ ul li a:hover::after {
     left: -85px;
     color: #FD6B6B;
     z-index: -1;
-}
+} */
 
 .nosotros__p {
+    margin-bottom: 2em;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 113.34%;
     text-align: center;
-    margin-top: 40px;
     width: 80%;
 }
 
@@ -440,7 +458,10 @@ ul li a:hover::after {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
-    margin: 2em 0;
+}
+
+.nosotros__card:nth-last-of-type(1) {
+    margin-bottom: 0;
 }
 
 .nosotros__card {
@@ -521,7 +542,7 @@ ul li a:hover::after {
     position: relative;
 }
 
-.formula__h2::before {
+/* .formula__h2::before {
     content: 'Nuestra fórmula';
     font-family: 'Rubik';
     font-style: normal;
@@ -533,17 +554,12 @@ ul li a:hover::after {
     left: 300px;
     color: #4ECDC4;
     z-index: -1;
-}
-
-.accordion-section {
-    margin: 75px 0;
-}
+} */
 
 .accordion-section__child {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 500px;
 }
 
 .accordion {
@@ -589,10 +605,6 @@ ul li a:hover::after {
 
 /* Nuestros trabajos */
 
-.nuestros-trabajos {
-    margin-bottom: 130px;
-}
-
 .trabajos__h2 {
     font-family: 'Rubik';
     font-style: normal;
@@ -602,7 +614,7 @@ ul li a:hover::after {
     position: relative;
 }
 
-.trabajos__h2::before {
+/* .trabajos__h2::before {
     content: 'Nuestros trabajos';
     font-family: 'Rubik';
     font-style: normal;
@@ -614,7 +626,7 @@ ul li a:hover::after {
     left: 260px;
     color: #FD6B6B;
     z-index: -1;
-}
+} */
 
 .nuestros-trabajos h2 {
     font-family: 'Rubik';
@@ -622,7 +634,6 @@ ul li a:hover::after {
     font-weight: 700;
     font-size: 48px;
     text-align: center;
-    margin-bottom: 100px;
 }
 
 .nuestrosTrabajos__vector{
@@ -634,14 +645,14 @@ ul li a:hover::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 120px;
 }
 
 
 .carrousel-card {
     width: 309px;
     height: 388px;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin: 1.5em;
     position: relative;
 }
 
@@ -689,18 +700,18 @@ ul li a:hover::after {
 
 /* Contacto */
 
-hr {
-    border: 1px solid white;
+.contact{
+    margin-bottom: 2em;
 }
 
-.form__title {
-    margin-top: 10px;
+hr {
+    border: 1px solid white;
 }
 
 .contact__titles {
     width: fit-content;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 7em auto;
 }
 
 .contact__titles h2 {
@@ -708,7 +719,7 @@ hr {
 }
 
 .contact__titles img {
-    margin: 4em auto;
+    margin-bottom: 4em;
 }
 
 .contact img {
@@ -719,11 +730,9 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 75px auto;
-    margin-bottom: 25px;
+    margin: auto;
     width: 620px;
     height: 527px;
-    padding: 20px;
     border-radius: 30px;
     background: #0B0818;
 }
@@ -779,4 +788,132 @@ footer img {
     color: white;
     font-size: 3rem;
     padding: 0.6rem;
+}
+
+/* Responsive */
+
+@media (max-width: 1040px){
+    .card-right{
+        margin-right: 5%;
+    }
+
+    .card-left{
+        margin-left: 5%;
+    }
+
+    .accordion-section__img{
+        width: 40%;
+    }
+}
+
+@media (max-width: 991px){
+    .ul__container {
+        background: none;
+    }
+
+    .navbar__child {
+        height: 200px;
+    }
+
+    .logo{
+        position: absolute;
+        top: 32px;
+    }
+
+    .presentacion__texts{
+        min-height: 500px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 850px){
+    
+    .card__info{
+        padding: 1em;
+    }
+
+    .subindex{
+        margin: .5em;
+    }
+
+    .card-left__child{
+        margin-right: 5%;
+    }
+
+    .card-rigth__child{
+        margin-left: 5%;
+    }
+
+    footer{
+        min-height: 100px;
+    }
+
+    footer img{
+        width: 50px;
+    }
+
+    .icons-container{
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 720px){
+    .card-right, .card-left{
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        margin: 3em auto;
+        height: auto;
+        width: 70%;
+    }
+
+    .card-rigth__child, .card-left__child{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        margin: 1em;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .card__info{
+        width: 80%;
+    }
+
+    .card-left .card__img, .card-right .card__img{
+        width: 80%;
+        height: auto;
+    }
+
+    .subindex{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+    }
+
+    .accordion-section__img{
+        width: 60%;
+    }
+
+    .accordion-section__child{
+        flex-direction: column-reverse;
+    }
+
+    .accordion{
+        width: 80%;
+    }
+
+    .contact form{
+        width: 80%;
+    }
+}
+
+@media (max-width: 620px){
+    .logo{
+        width: 40%;
+    }
+
+    .alkimia-logo{
+        display: none;
+    }
 }
