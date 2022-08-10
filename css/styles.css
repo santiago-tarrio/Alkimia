@@ -45,7 +45,7 @@ p {
 .gradient {
     position: absolute;
     z-index: -1;
-    width: 100%;
+    width: 70%
 }
 
 .nosotros, .accordion-section, .nuestros-trabajos, .contact{
@@ -330,7 +330,7 @@ ul li a:hover::after {
     position: relative;
 }
 
-/* .services__h2::before {
+.services__h2::before {
     content: 'Nuestros servicios';
     font-family: 'Rubik';
     font-style: normal;
@@ -342,7 +342,7 @@ ul li a:hover::after {
     left: 280px;
     color: #4ECDC4;
     z-index: -1;
-} */
+}
 
 .services__vector{
     transform: rotate(175.87deg);
@@ -430,7 +430,7 @@ ul li a:hover::after {
     position: relative;
 }
 
-/* .nosotros__h2::before {
+.nosotros__h2::before {
     content: 'Nosotros';
     font-family: 'Rubik';
     font-style: normal;
@@ -442,7 +442,7 @@ ul li a:hover::after {
     left: -85px;
     color: #FD6B6B;
     z-index: -1;
-} */
+}
 
 .nosotros__p {
     margin-bottom: 2em;
@@ -543,7 +543,7 @@ ul li a:hover::after {
     position: relative;
 }
 
-/* .formula__h2::before {
+.formula__h2::before {
     content: 'Nuestra fórmula';
     font-family: 'Rubik';
     font-style: normal;
@@ -555,7 +555,7 @@ ul li a:hover::after {
     left: 300px;
     color: #4ECDC4;
     z-index: -1;
-} */
+}
 
 .accordion-section__child {
     display: flex;
@@ -615,7 +615,7 @@ ul li a:hover::after {
     position: relative;
 }
 
-/* .trabajos__h2::before {
+.trabajos__h2::before {
     content: 'Nuestros trabajos';
     font-family: 'Rubik';
     font-style: normal;
@@ -627,7 +627,7 @@ ul li a:hover::after {
     left: 260px;
     color: #FD6B6B;
     z-index: -1;
-} */
+}
 
 .nuestros-trabajos h2 {
     font-family: 'Rubik';
@@ -794,6 +794,15 @@ footer img {
 /* Responsive */
 
 @media (max-width: 1040px){
+    
+    .services__h2::before, .nosotros__h2::before, .trabajos__h2::before, .formula__h2::before {
+        display: none;
+    }
+    
+    .presentacion__gradient, .gradient {
+        display: none;
+    }
+    
     .card-right{
         margin-right: 5%;
     }
