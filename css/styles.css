@@ -65,14 +65,14 @@ section > h2{
 .alkimia-logo {
     width: 37px;
     position: fixed;
-    top: 33px;
-    left: 28px;
+    top: 28px;
+    left: 16px;
     z-index: 100;
 }
 
 .navbar__child {
-    height: 100px;
-    padding-right: 0;
+    padding: 0;
+    margin-top: 3vh;
 }
 
 .div__ul {
@@ -83,6 +83,8 @@ section > h2{
     width: 370px;
     height: 51px;
     right: 0;
+    padding: 0;
+    text-align: center;
     background: linear-gradient(89.91deg, rgba(78, 205, 196, 0.82) 0.08%, #4ECDC4 40.87%, #FD6B6B 81.84%, rgba(253, 107, 107, 0.11) 99.94%);
     border-radius: 25px 0px 0px 25px;
     display: flex !important;
@@ -121,7 +123,19 @@ ul li a:hover::after {
     transform: scaleX(1);
 }
 
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 /* Presentation */
+
+.presentation{
+    margin-bottom: 90px;
+}
 
 .presentacion__texts {
     display: flex;
@@ -512,12 +526,12 @@ ul li a:hover::after {
 .nosotros__card-data p {
     position: absolute;
     font-style: normal;
-    width: 70%;
+    width: 80%;
     margin-left: 34px;
 }
 
 .nosotros__name {
-    top: 65%;
+    top: 75%;
     font-family: 'Quicksand';
     font-weight: 600;
     font-size: 22px;
@@ -525,7 +539,7 @@ ul li a:hover::after {
 }
 
 .nosotros__professions {
-    top: 75%;
+    top: 85%;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -670,7 +684,7 @@ ul li a:hover::after {
     background: rgba(255, 255, 255, 0.75);
     opacity: 0.8;
     backdrop-filter: blur(25px);
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .carrousel-text p {
@@ -802,6 +816,19 @@ footer img {
     .presentacion__gradient, .gradient {
         display: none;
     }
+
+    .presentation{
+        margin-bottom: 0;
+    }
+
+    .presentacion__texts{
+        min-height: 50vh;
+    }
+
+    .presentacion__texts p, .presentacion__texts a {
+        transform: translateY(-70px);
+        margin-top: 20px;
+    }
     
     .card-right{
         margin-right: 5%;
@@ -818,25 +845,50 @@ footer img {
 
 @media (max-width: 991px){
     .ul__container {
-        background: none;
+        background: rgba(0, 0, 0, 0.301);
+        margin: 1em auto;
+        border-radius: 15px;
+        width: 70%;
+        height: auto;
     }
 
-    .navbar__child {
-        height: 200px;
+    nav ul li {
+        margin: 1em;
     }
 
-    .logo{
-        position: absolute;
-        top: 32px;
+    ul li a{
+        font-size: 1.5em;
+        margin: 0;
     }
 
     .presentacion__texts{
         min-height: 500px;
-        justify-content: space-between;
     }
+
+    .nosotros__p{
+        text-align: justify;
+    }
+
+.nosotros, .accordion-section, .nuestros-trabajos, .contact{
+    margin-top: 3em;
+}
+
+footer{
+    min-height: 10vh;
+}
 }
 
 @media (max-width: 850px){
+
+    .presentacion__texts h1{
+        font-size: 3em;
+    }
+
+    .presentacion__texts p{
+        font-size: 1em;
+        width: 80%;
+        line-height: 1.5em;
+    }
     
     .card__info{
         padding: 1em;
@@ -892,6 +944,8 @@ footer img {
     .card-left .card__img, .card-right .card__img{
         width: 80%;
         height: auto;
+        margin-bottom: 2em;
+        border-radius: 26px;
     }
 
     .subindex{
@@ -916,6 +970,10 @@ footer img {
     .contact form{
         width: 80%;
     }
+
+    .nosotros__p{
+        font-size: 19px;
+    }
 }
 
 @media (max-width: 620px){
@@ -925,5 +983,11 @@ footer img {
 
     .alkimia-logo{
         display: none;
+    }
+}
+
+@media (max-width: 620px){
+    .card-right, .card-left{
+        width: 85%;
     }
 }
