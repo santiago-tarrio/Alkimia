@@ -667,7 +667,7 @@ ul li a:hover::after {
     width: 309px;
     height: 388px;
     border-radius: 15px;
-    margin: 1.5em;
+    margin-top: 1.5em;
     position: relative;
 }
 
@@ -711,6 +711,14 @@ ul li a:hover::after {
     bottom: -100px;
     left: 15px;
     height: 85px;
+}
+
+.swiper-pagination{
+    bottom: 0px!important;
+}
+
+.swiper{
+    width: 73%;
 }
 
 /* Contacto */
@@ -806,6 +814,12 @@ footer img {
 }
 
 /* Responsive */
+
+@media (max-width: 1280) {
+    .swiper{
+        width:85%;
+    }
+}
 
 @media (max-width: 1040px){
     
