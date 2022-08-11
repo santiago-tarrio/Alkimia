@@ -49,7 +49,7 @@ p {
 }
 
 .nosotros, .accordion-section, .nuestros-trabajos, .contact{
-    margin: 8em 0;
+    margin: 9em 0;
 }
 
 section > h2{
@@ -85,7 +85,7 @@ section > h2{
     right: 0;
     padding: 0;
     text-align: center;
-    background: linear-gradient(89.91deg, rgba(78, 205, 196, 0.82) 0.08%, #4ECDC4 40.87%, #FD6B6B 81.84%, rgba(253, 107, 107, 0.11) 99.94%);
+    background: linear-gradient(89.91deg, #4ccdc4d1 0.08%, #4ECDC4 40.87%, #FD6B6B 81.84%, rgba(253, 107, 107, 0.11) 99.94%);
     border-radius: 25px 0px 0px 25px;
     display: flex !important;
 }
@@ -531,7 +531,7 @@ ul li a:hover::after {
 }
 
 .nosotros__name {
-    top: 75%;
+    top: 82%;
     font-family: 'Quicksand';
     font-weight: 600;
     font-size: 22px;
@@ -539,7 +539,7 @@ ul li a:hover::after {
 }
 
 .nosotros__professions {
-    top: 85%;
+    top: 90%;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -806,7 +806,7 @@ footer img {
 .icon-whatsapp {
     width: 80px;
     position: fixed;
-    bottom: 5%;
+    bottom: 2%;
     right: 1%;
     color: white;
     font-size: 3rem;
@@ -902,6 +902,7 @@ footer{
         font-size: 1em;
         width: 80%;
         line-height: 1.5em;
+        font-size: 14px;
     }
     
     .card__info{
@@ -959,7 +960,6 @@ footer{
         width: 80%;
         height: auto;
         margin-bottom: 2em;
-        border-radius: 26px;
     }
 
     .subindex{
@@ -971,6 +971,7 @@ footer{
 
     .accordion-section__img{
         width: 60%;
+        margin: 5em;
     }
 
     .accordion-section__child{
@@ -986,7 +987,15 @@ footer{
     }
 
     .nosotros__p{
-        font-size: 19px;
+        font-size: 16px;
+    }
+
+    .presentacion__texts h1{
+        font-size: 32px;
+    }
+
+    .services__h2, .nosotros__h2, .formula__h2, .nuestros-trabajos h2 {
+        font-size: 32px;
     }
 }
 
