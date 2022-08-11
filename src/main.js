@@ -29,3 +29,25 @@ var swiper = new Swiper(".mySwiper", {
           slidesPerGroup: 3,
         },}
   });
+
+  window.addEventListener('scroll', function() {
+    let nav = document.getElementById('navbarScroll')
+    let alk = document.getElementById('logo-a')
+    let position = nav.getBoundingClientRect().bottom;
+    let logo = document.getElementById('logo')
+    let tamaño = window.innerHeight;
+    let pos = logo.getBoundingClientRect().bottom;
+
+    console.log(pos)
+
+    if(position < 0) {
+        nav.classList.add('nav-fixed')
+        console.log(nav.getBoundingClientRect().top)
+        alk.classList.add('alkimia-logo')
+    }
+
+    if(pos > 0) {
+        nav.classList.remove('nav-fixed');
+        alk.classList.remove('alkimia-logo');
+    }
+})
