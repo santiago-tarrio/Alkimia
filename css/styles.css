@@ -672,8 +672,8 @@ ul li a:hover::after {
 }
 
 .carrousel-card img {
-    width: inherit;
-    height: inherit;
+    width: 309px;
+    height: 388px;
 }
 
 .carrousel-text {
