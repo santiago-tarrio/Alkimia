@@ -133,6 +133,10 @@ ul li a:hover::after {
 
 /* Presentation */
 
+.presentation{
+    margin-bottom: 90px;
+}
+
 .presentacion__texts {
     display: flex;
     flex-direction: column;
@@ -522,7 +526,7 @@ ul li a:hover::after {
 .nosotros__card-data p {
     position: absolute;
     font-style: normal;
-    width: 70%;
+    width: 80%;
     margin-left: 34px;
 }
 
@@ -663,13 +667,13 @@ ul li a:hover::after {
     width: 309px;
     height: 388px;
     border-radius: 15px;
-    margin: 1.5em;
+    margin-top: 1.5em;
     position: relative;
 }
 
 .carrousel-card img {
-    width: inherit;
-    height: inherit;
+    width: 309px;
+    height: 388px;
 }
 
 .carrousel-text {
@@ -680,7 +684,7 @@ ul li a:hover::after {
     background: rgba(255, 255, 255, 0.75);
     opacity: 0.8;
     backdrop-filter: blur(25px);
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .carrousel-text p {
@@ -707,6 +711,14 @@ ul li a:hover::after {
     bottom: -100px;
     left: 15px;
     height: 85px;
+}
+
+.swiper-pagination{
+    bottom: 0px!important;
+}
+
+.swiper{
+    width: 73%;
 }
 
 /* Contacto */
@@ -803,6 +815,12 @@ footer img {
 
 /* Responsive */
 
+@media (max-width: 1280) {
+    .swiper{
+        width:85%;
+    }
+}
+
 @media (max-width: 1040px){
     
     .services__h2::before, .nosotros__h2::before, .trabajos__h2::before, .formula__h2::before {
@@ -811,6 +829,19 @@ footer img {
     
     .presentacion__gradient, .gradient {
         display: none;
+    }
+
+    .presentation{
+        margin-bottom: 0;
+    }
+
+    .presentacion__texts{
+        min-height: 50vh;
+    }
+
+    .presentacion__texts p, .presentacion__texts a {
+        transform: translateY(-70px);
+        margin-top: 20px;
     }
     
     .card-right{
@@ -847,6 +878,18 @@ footer img {
     .presentacion__texts{
         min-height: 500px;
     }
+
+    .nosotros__p{
+        text-align: justify;
+    }
+
+.nosotros, .accordion-section, .nuestros-trabajos, .contact{
+    margin-top: 3em;
+}
+
+footer{
+    min-height: 10vh;
+}
 }
 
 @media (max-width: 850px){
@@ -916,6 +959,7 @@ footer img {
         width: 80%;
         height: auto;
         margin-bottom: 2em;
+        border-radius: 26px;
     }
 
     .subindex{
@@ -939,6 +983,10 @@ footer img {
 
     .contact form{
         width: 80%;
+    }
+
+    .nosotros__p{
+        font-size: 19px;
     }
 }
 
