@@ -466,6 +466,10 @@ ul li a:hover::after {
     align-self: start;
 }
 
+#services {
+    overflow-x: hidden!important;
+}
+
 /* Nosotros */
 
 .nosotros {
