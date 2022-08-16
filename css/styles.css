@@ -764,6 +764,30 @@ ul li a:hover::after {
     width: 73%;
 }
 
+.swiper-button-prev, .swiper-rtl, .swiper-button-next {
+    height: 47px;
+    width: 47px;
+    color: rgb(31, 41, 55);
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+}
+
+.swiper-button-prev::after{
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.swiper-button-next::after{
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: rgb(31, 41, 55);
+}
+
 /* Contacto */
 
 .contact{
@@ -863,6 +887,11 @@ footer img {
     .swiper{
         width:85%;
     }
+
+    .swiper-button-next{
+        margin-right: 20px;
+    }
+
     .services__h2::before {
         font-size: 72px;
     }
@@ -881,9 +910,18 @@ footer img {
     }
 }
 
+@media (max-width: 1229px){
+    /*.swiper-button-next{
+        margin-right: 0px;
+    }
+    
+    .swiper{
+        margin-left: 140px;
+    }*/
+}
+
 
 @media (max-width: 1040px){
-    
     .services__h2::before, .nosotros__h2::before, .trabajos__h2::before, .formula__h2::before {
         display: none;
     }
@@ -918,7 +956,21 @@ footer img {
     }
 }
 
+@media (max-width: 1040px){
+    .swiper-slide-active{
+        left: 35%;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+    .swiper-pagination {
+        bottom: -4px!important;
+    }
+}
+
 @media (max-width: 991px){
+
     .ul__container {
         background: rgba(0, 0, 0, 0.301);
         margin: 1em auto;
@@ -944,16 +996,23 @@ footer img {
         text-align: justify;
     }
 
-.nosotros, .accordion-section, .nuestros-trabajos, .contact{
-    margin-top: 3em;
-}
+    .nosotros, .accordion-section, .nuestros-trabajos, .contact{
+        margin-top: 3em;
+    }
 
-footer{
-    min-height: 10vh;
-}
+    footer{
+        min-height: 10vh;
+    }
 }
 
 @media (max-width: 850px){
+    .swiper-slide-active{
+        left: 28%;
+    }
+
+    .swiper-button-next{
+        margin-right: 20%;
+    }
 
     .presentacion__texts h1{
         font-size: 3em;
@@ -1061,6 +1120,10 @@ footer{
 }
 
 @media (max-width: 620px){
+    .swiper-slide-active{
+        left: 20%;
+    }
+
     .logo{
         width: 40%;
     }
@@ -1068,10 +1131,14 @@ footer{
     .alkimia-logo{
         display: none;
     }
-}
 
-@media (max-width: 620px){
     .card-right, .card-left{
         width: 85%;
+    }
+}
+
+@media (max-width: 500px){
+    .swiper-slide-active{
+        left: 10%;
     }
 }

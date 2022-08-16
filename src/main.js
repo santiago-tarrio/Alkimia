@@ -19,11 +19,11 @@ var swiper = new Swiper(".mySwiper", {
           slidesPerGroup: 1,
         },
         768: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-          slidesPerGroup: 2,
+          slidesPerView: 1,
+          spaceBetween: 5,
+          slidesPerGroup: 1,
         },
-        1024: {
+        1040: {
           slidesPerView: 3,
           spaceBetween: 50,
           slidesPerGroup: 3,
