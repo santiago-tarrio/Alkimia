@@ -52,6 +52,10 @@ p {
     margin: 9em 0;
 }
 
+.row{
+    margin-left: 0;
+}
+
 section > h2{
     margin: 1em 0;
 }
@@ -631,7 +635,7 @@ ul li a:hover::after {
 }
 
 .accordion-section__img{
-    width: 35%;
+    width: 40%;
 }
 
 .accordion-item {
@@ -718,7 +722,7 @@ ul li a:hover::after {
 
 
 .carrousel-card {
-    width: 280px;
+    width: 310px;
     height: 388px;
     border-radius: 15px;
     margin-top: 1.5em;
@@ -727,14 +731,14 @@ ul li a:hover::after {
 }
 
 .carrousel-card img {
-    width: 280px;
+    width: 310px;
     min-height: 320px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
 .carrousel-text {
-    width: 280px;
+    width: 310px;
     height: 71px;
     position: absolute;
     bottom: 0;
@@ -889,6 +893,12 @@ footer img {
     width: 80px;
 }
 
+footer img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .4s;
+}
+
 .icon-whatsapp {
     width: 80px;
     position: fixed;
@@ -976,10 +986,10 @@ footer img {
 @media (max-width: 991px){
 
     .ul__container {
-        background: rgba(0, 0, 0, 0.301);
+        background: rgba(0, 0, 0, 0.6);
         margin: 1em auto;
         border-radius: 15px;
-        width: 70%;
+        width: 100%;
         height: auto;
     }
 
