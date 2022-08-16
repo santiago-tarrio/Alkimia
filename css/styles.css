@@ -1003,6 +1003,14 @@ footer img {
     footer{
         min-height: 10vh;
     }
+
+    .nav-fixed:hover{
+        display: none!important;
+    }
+
+    #arrow-id{
+        display: none;
+    }
 }
 
 @media (max-width: 850px){
