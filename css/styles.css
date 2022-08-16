@@ -144,6 +144,7 @@ ul li a:hover::after {
     width: 70px;
     position: fixed;
     background: #4ECDC4 ;
+    z-index: 100;
 }
 
 .nav-fixed > *{
@@ -629,6 +630,10 @@ ul li a:hover::after {
     color: white;
 }
 
+.accordion-section__img{
+    width: 35%;
+}
+
 .accordion-item {
     margin: 20px 0;
     border: 1px solid #fff !important;
@@ -694,6 +699,12 @@ ul li a:hover::after {
     text-align: center;
 }
 
+.nuestros-trabajos__btn{
+    margin: 0 auto;
+    display: block;
+    margin-top: 4em;
+}
+
 .nuestrosTrabajos__vector{
     transform: rotate(122.63deg);
     margin-top: -230px;
@@ -707,20 +718,23 @@ ul li a:hover::after {
 
 
 .carrousel-card {
-    width: 309px;
+    width: 280px;
     height: 388px;
     border-radius: 15px;
     margin-top: 1.5em;
     position: relative;
+    overflow: hidden;
 }
 
 .carrousel-card img {
-    width: 309px;
-    height: 388px;
+    width: 280px;
+    min-height: 320px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
 .carrousel-text {
-    width: 309px;
+    width: 280px;
     height: 71px;
     position: absolute;
     bottom: 0;
@@ -728,6 +742,11 @@ ul li a:hover::after {
     opacity: 0.8;
     backdrop-filter: blur(25px);
     border-radius: 0px 0px 15px 15px;
+}
+
+.carrousel-text h4{
+    color: black;
+    text-align: center;
 }
 
 .carrousel-text p {
@@ -910,17 +929,6 @@ footer img {
     }
 }
 
-@media (max-width: 1229px){
-    /*.swiper-button-next{
-        margin-right: 0px;
-    }
-    
-    .swiper{
-        margin-left: 140px;
-    }*/
-}
-
-
 @media (max-width: 1040px){
     .services__h2::before, .nosotros__h2::before, .trabajos__h2::before, .formula__h2::before {
         display: none;
@@ -949,10 +957,6 @@ footer img {
 
     .card-left{
         margin-left: 5%;
-    }
-
-    .accordion-section__img{
-        width: 40%;
     }
 }
 
@@ -1142,6 +1146,18 @@ footer img {
 
     .card-right, .card-left{
         width: 85%;
+    }
+
+    .icons-container{
+        width: 260px;
+    }
+
+    .icon-whatsapp{
+        width: 65px;
+    }
+
+    footer img{
+        width: 40px;
     }
 }
 
