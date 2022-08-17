@@ -703,12 +703,6 @@ ul li a:hover::after {
     text-align: center;
 }
 
-.nuestros-trabajos__btn{
-    margin: 0 auto;
-    display: block;
-    margin-top: 4em;
-}
-
 .nuestrosTrabajos__vector{
     transform: rotate(122.63deg);
     margin-top: -230px;
@@ -750,19 +744,25 @@ ul li a:hover::after {
 
 .carrousel-text h4{
     color: black;
-    text-align: center;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 80%;
 }
 
 .carrousel-text p {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 130%;
     color: #1F2937;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-left: 20px;
-    width: 70%;
+    width: 80%;
 }
 
 .carrousel-detail {
@@ -810,6 +810,25 @@ ul li a:hover::after {
 .swiper-pagination-bullet-active{
     background-color: rgb(31, 41, 55);
 }
+
+.portfolio-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.portfolio-btn{
+    width: 72px;
+    height: 72px;
+    background: #ED6A6D;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4), -5px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 
 /* Contacto */
 
@@ -968,13 +987,17 @@ footer img:hover {
     .card-left{
         margin-left: 5%;
     }
+
+    .swiper{
+        width:100%;
+    }
+
+    .swiper-slide-active{
+        left: calc(50% - 155px);
+    }
 }
 
 @media (max-width: 1040px){
-    .swiper-slide-active{
-        left: 35%;
-    }
-
     .swiper-button-prev, .swiper-button-next{
         display: none;
     }
@@ -984,7 +1007,6 @@ footer img:hover {
 }
 
 @media (max-width: 991px){
-
     .ul__container {
         background: rgba(0, 0, 0, 0.6);
         margin: 1em auto;
@@ -1028,14 +1050,6 @@ footer img:hover {
 }
 
 @media (max-width: 850px){
-    .swiper-slide-active{
-        left: 28%;
-    }
-
-    .swiper-button-next{
-        margin-right: 20%;
-    }
-
     .presentacion__texts h1{
         font-size: 3em;
     }
@@ -1142,10 +1156,6 @@ footer img:hover {
 }
 
 @media (max-width: 620px){
-    .swiper-slide-active{
-        left: 20%;
-    }
-
     .logo{
         width: 40%;
     }
@@ -1168,11 +1178,5 @@ footer img:hover {
 
     footer img{
         width: 40px;
-    }
-}
-
-@media (max-width: 500px){
-    .swiper-slide-active{
-        left: 10%;
     }
 }
