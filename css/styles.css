@@ -716,7 +716,7 @@ ul li a:hover::after {
 
 
 .carrousel-card {
-    width: 310px;
+    width: 290px;
     height: 388px;
     border-radius: 15px;
     margin-top: 1.5em;
@@ -761,7 +761,7 @@ ul li a:hover::after {
     line-height: 130%;
     color: #1F2937;
     margin-top: 2px;
-    margin-left: 20px;
+    margin-left: 15px;
     width: 80%;
 }
 
@@ -970,15 +970,6 @@ footer img:hover {
     .presentation{
         margin-bottom: 0;
     }
-
-    .presentacion__texts{
-        min-height: 50vh;
-    }
-
-    .presentacion__texts p, .presentacion__texts a {
-        transform: translateY(-70px);
-        margin-top: 20px;
-    }
     
     .card-right{
         margin-right: 5%;
@@ -1025,7 +1016,7 @@ footer img:hover {
     }
 
     .presentacion__texts{
-        min-height: 500px;
+        min-height: 450px;
     }
 
     .nosotros__p{

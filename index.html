@@ -204,8 +204,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <img src="./assets/img/formula-marketing.png" alt="La fórmula del márketing" 
-                    class="accordion-section__img">-->
                 <img src="./assets/img/nuestra-formula.svg" class="accordion-section__img" alt="La fórmula del márketing" data-aos="zoom-in-up">
             </div>
         </section>
@@ -280,16 +278,16 @@
                 <h2>¿Tenés una idea?</h2>
                 <h2>ALKIMIZALA</h2>
             </div>
-            <form action="" id="contact">
+            <form action="https://formspree.io/f/xdojoygq" method="POST" id="contact">
                 <div class="form__title">
                     <h3>Cotizá ahora</h3>
                     <hr>
                 </div>
                 <div class="form__container">
-                    <input type="text" class="form-control" id="name" placeholder="Nombre" required>
-                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                    <input type="phone" class="form-control" id="phone" placeholder="Teléfono" required>
-                    <textarea class="form-control" id="message" rows="6" placeholder="Contanos tu idea"
+                    <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    <input type="phone" class="form-control" id="phone" name="phone" placeholder="Teléfono" required>
+                    <textarea class="form-control" id="message" rows="6" name="message" placeholder="Contanos tu idea"
                         required></textarea>
                 </div>
                 <button type="submit" class="btn btn-alkimia">Enviar</button>

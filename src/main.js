@@ -51,3 +51,11 @@ var swiper = new Swiper(".mySwiper", {
         alk.classList.remove('alkimia-logo');
     }
 })
+
+// Formulario
+
+const form = document.getElementById('contact')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+} )
